@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+ * {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+ }
+
+/* }
+ 
+  font-family: "Poppins", sans-serif;
+
+font-family: "Josefin Sans", sans-serif;
+} */
+.navbar-brand{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: aliceblue;
+  letter-spacing: 3px;
+ 
+  
+}
+.navbar {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  line-height: 25px;
+  background-color: rgb(9, 112, 0);
+  box-shadow: 0 8px 6px -6px gray;
+}
+.nav-link{
+  color: aliceblue;
+  font-style: 300 !important;
+}
+
+
+.active{
+
+  border-bottom: 2px  solid  rgb(42, 250, 42);
+}
+.header-form{
+  line-height: 30px;
+  padding:0 180px;
+ 
+}
+.btn-search{
+ 
+  background-color: rgb(36, 206, 36) ;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+/****page not found ****/
+
+.pnf{
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pnf-title{
+  font-size: 100px;
+  font-weight: 700;
+}
+.pnf-heading{
+  font-weight: normal;
+}
+.pnf-btn{
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/****Register***/
+
+.register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  flex-direction: column;
+  font-weight:bolder;
+
+
+}
+.login-form{
+ width: 320px;
+ height: 50vh;
+ border-radius: 20px;
+ background:linear-gradient(45deg,white,rgb(7, 243, 7));
+ padding: 20px 25px;
+ box-shadow: 0 0 40px 2px ;
+}
+.login-form.reg{
+  height:70vh;
+  
+}
+.login-btn{
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  background:rgb(7, 243, 7) ;
+ 
+}
+.forgot{
+  cursor: pointer;
+  width: 50%;
+  color: blue;
+  border: none;
+  background-color: transparent;
+ 
+}
+.forgot:hover{
+  text-decoration: underline;
+}
+.login-btn:hover{
+  background: aliceblue;
+
+}
+
+.create-account{
+  margin: 5px;
+}
+.forgot.cr{
+  /* text-decoration: none; */
+  padding: 0 150px;
+  
+  
+}
+
+
+
+/******/
+.po{
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 40px;
+}
+
+/*****add  cart button***/
+
+.add-cart-btn{
+  border-color:  rgba(0, 255, 34, 0.904);
+  border-radius: 0 20px ;
+  color: black;
+  background: whitesmoke;
+  padding:5px 20px;
+  transition: .5s;
+}
+.add-cart-btn:hover{
+  color:white;
+  background-color: rgba(0, 255, 34, 0.904);
+}
+/**Card**/
+.card{
+  border-radius: 0 20px ;
+  cursor: pointer;
+}
+.card:hover{
+  box-shadow: 0px 3px 15px;
+}
+
+
+
+/***footer**/
+
+.footer{
+  background-color: rgb(124, 124, 124);
+}
+
+.product-link{
+  text-decoration: none !important;
+  color:black !important;
+}
+footer li a{
+  text-decoration: none;
+
+color: rgb(240, 229, 229);
+}
+footer li a:hover{
+  color: rgb(61, 233, 34);
+}
+
+
+.payitem i{
+  width: 20px;
+  height: 20px;
+  color: rgb(255, 196, 0);
+  
+
+}
+
+
