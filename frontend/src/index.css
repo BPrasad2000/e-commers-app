@@ -178,12 +178,12 @@ font-family: "Josefin Sans", sans-serif;
   text-decoration: none !important;
   color:black !important;
 }
-footer li a{
+.Flink{
   text-decoration: none;
 
 color: rgb(240, 229, 229);
 }
-footer li a:hover{
+.Flink:hover{
   color: rgb(61, 233, 34);
 }
 

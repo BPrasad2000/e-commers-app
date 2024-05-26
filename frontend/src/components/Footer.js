@@ -20,7 +20,7 @@ const Footer = () => {
                 &nbsp; <u>467 Colombo - Galle Rd, Rathmalana</u>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                   <i class="fa-solid fa-phone"></i>
                   &nbsp; 0112623522
                   </a>
@@ -32,27 +32,23 @@ const Footer = () => {
               <h4>Quick Links</h4>
               <ul className="list-unstyled ">
                 <li>
-                  <a className="k" href="#">
+                  <a className="Flink" href="/">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="/about">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="/contact">
                     Contact Us
                   </a>
                 </li>
+              
                 <li>
-                  <a className="k" href="">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="/policy">
                     Privacy Policy
                   </a>
                 </li>
@@ -63,22 +59,22 @@ const Footer = () => {
               <h4>Categories</h4>
               <ul className="list-unstyled">
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     Fruits
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     Vegetables
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     Homeware
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     Meats
                   </a>
                 </li>
@@ -89,27 +85,27 @@ const Footer = () => {
               <h4>Follow Us</h4>
               <ul className="list-unstyled">
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     <i class="fa-brands fa-google"></i> Google
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     <i class="fa-brands fa-twitter"></i> Twitter
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     <i class="fa-brands fa-facebook"></i> Facebook
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     <i class="fa-brands fa-instagram"></i> Instragram
                   </a>
                 </li>
                 <li>
-                  <a className="k" href="">
+                  <a className="Flink" href="">
                     <i class="fa-brands fa-youtube"></i> YouTube
                   </a>
                 </li>
