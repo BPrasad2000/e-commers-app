@@ -16,12 +16,12 @@ const Footer = () => {
               </h4>
               <ul className="list-unstyled">
                 <li>
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
                 &nbsp; <u>467 Colombo - Galle Rd, Rathmalana</u>
                 </li>
                 <li>
                   <a className="Flink" href="">
-                  <i class="fa-solid fa-phone"></i>
+                  <i className="fa-solid fa-phone"></i>
                   &nbsp; 0112623522
                   </a>
                 </li>
@@ -59,23 +59,28 @@ const Footer = () => {
               <h4>Categories</h4>
               <ul className="list-unstyled">
                 <li>
-                  <a className="Flink" href="">
+                  <a className="Flink" href="/category/fruits">
                     Fruits
                   </a>
                 </li>
                 <li>
-                  <a className="Flink" href="">
+                  <a className="Flink" href="/category/vegitable">
                     Vegetables
                   </a>
                 </li>
                 <li>
-                  <a className="Flink" href="">
+                  <a className="Flink" href="/category/homeware">
                     Homeware
                   </a>
                 </li>
                 <li>
-                  <a className="Flink" href="">
+                  <a className="Flink" href="/category/meats">
                     Meats
+                  </a>
+                </li>
+                <li>
+                  <a className="Flink" href="/category/bakery">
+                    Bakery
                   </a>
                 </li>
               </ul>
@@ -86,36 +91,36 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li>
                   <a className="Flink" href="">
-                    <i class="fa-brands fa-google"></i> Google
+                    <i className="fa-brands fa-google"></i> Google
                   </a>
                 </li>
                 <li>
                   <a className="Flink" href="">
-                    <i class="fa-brands fa-twitter"></i> Twitter
+                    <i className="fa-brands fa-twitter"></i> Twitter
                   </a>
                 </li>
                 <li>
                   <a className="Flink" href="">
-                    <i class="fa-brands fa-facebook"></i> Facebook
+                    <i className="fa-brands fa-facebook"></i> Facebook
                   </a>
                 </li>
                 <li>
                   <a className="Flink" href="">
-                    <i class="fa-brands fa-instagram"></i> Instragram
+                    <i className="fa-brands fa-instagram"></i> Instragram
                   </a>
                 </li>
                 <li>
                   <a className="Flink" href="">
-                    <i class="fa-brands fa-youtube"></i> YouTube
+                    <i className="fa-brands fa-youtube"></i> YouTube
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="payitem text-end">
-            <i class="fa-brands fa-cc-visa"></i>	
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa-brands fa-google-play"></i>	
+            <i className="fa-brands fa-cc-visa"></i>	
+            <i className="fa-brands fa-cc-mastercard"></i>
+            <i className="fa-brands fa-google-play"></i>	
             
             
           </div>

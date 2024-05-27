@@ -96,21 +96,21 @@ const Home = () => {
         <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="col">
             <div className="card h-100">
-              <a href=''>
+              <a href='/category/fruits'>
                 <img src={ctg1} className="card-img-top" alt="..." />
               </a>
             </div>
           </div>
           <div className="col">
             <div className="card h-100">
-              <a href=''>
+              <a href='/category/vegitable'>
                 <img src={ctg2} className="card-img-top" alt="..." />
               </a>
             </div>
           </div>
           <div className="col">
             <div className="card h-100">
-              <a href=''>
+              <a href='/category/meats'>
                 <img src={ctg3} className="card-img-top" alt="..." />
               </a>
             </div>
@@ -124,7 +124,7 @@ const Home = () => {
           </div>
           <div className="col">
             <div className="card h-100">
-              <a href=''>
+              <a href='/category/homeware'>
                 <img src={ctg5} className="card-img-top" alt="..." />
               </a>
             </div>
