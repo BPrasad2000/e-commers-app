@@ -5,7 +5,7 @@ const CategoryForm = ({handleSubmit,value,setValue}) => {
     <>
         <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                  <label for="exampleInputEmail1" className="form-label">Email address</label>
+                  <label for="exampleInputEmail1" className="form-label fs-4 fw-bold">Category Name</label>
                   <input type="text" className="form-control"
                   placeholder='Enter New Category' value={value} onChange={(e) =>setValue(e.target.value)} />
                 </div>

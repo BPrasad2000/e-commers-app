@@ -117,7 +117,7 @@ const Home = () => {
           </div>
           <div className="col">
             <div className="card h-100">
-              <a href=''>
+              <a href='/category/bakery'>
                 <img src={ctg4} className="card-img-top" alt="..." />
               </a>
             </div>
@@ -131,7 +131,7 @@ const Home = () => {
           </div>
           <div className="col">
             <div className="card h-100">
-              <a href=''>
+              <a href='/category/beauty-picks'>
                 <img src={ctg6} className="card-img-top" alt="..." />
               </a>
             </div>

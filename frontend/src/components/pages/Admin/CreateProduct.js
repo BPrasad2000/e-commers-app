@@ -141,11 +141,11 @@ const CreateProduct = () => {
               className='form-control'
               onChange={(e)=>setQuantity(e.target.value)}
               />
-             </div>
+             </div> 
              <div className='mb-3'>
               <Select
                  variant="outlined"
-                placeholder='Select Shipping'
+                placeholder='Select deliver'
                 size='large'
                 showSearch
                 className='form-select mb-3'

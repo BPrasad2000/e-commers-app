@@ -15,19 +15,63 @@ const CartPage = () => {
   const [loading,setLoading] =useState(false)
   const navigate = useNavigate();
 
-  const totalPrice = ()=>{
+const discountPrice =()=>{
+  let total=Price();
+  let dis;
+      if (total>=10000) {
+         dis =total*20/100;
+         
+       } else if (total>=5000)  {
+         dis=total*10/100;
+       }
+        else  {
+         dis=0;
+       }
+
+       return dis;
+  
+}
+const deliverFee=()=>{
+  let total= Price();
+  let del
+  if(total==0)
+  {
+    del=0;
+  }
+  else {
+    del=500;
+  }
+  return del;
+}
+
+  const Price = ()=>{
     try {
       let total =0;
-      cart?.map((item)=>{total= total+ item.price})
+       cart?.map((item)=>{total= total+ item.price})
+      
+      return  total;
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  const totalPrice = ()=>{
+    try {
+      let total =Price();
+     let dis=discountPrice();
+     let del=deliverFee();
+      total=total-dis+del ;
       return  total.toLocaleString("en-us",{
         style :'currency',
         currency:'LKR',
-      
+
       });
     } catch (error) {
       console.log(error)
     }
   }
+
 
   const removeCartItem = (pid) =>{
     try {
@@ -81,7 +125,7 @@ const CartPage = () => {
         <div className="row">
           <div className="col-md-12">
             <h1 className="text-center bg-light p-2">
-              {`hello ${auth?.token && auth?.user?.name}`}
+              {`Hello ${auth?.token && auth?.user?.name}`}
             </h1>
             <h4 className="text-center">
               {cart?.length 
@@ -114,13 +158,17 @@ const CartPage = () => {
           </div>
           <div className="col-md-4 text-center" style={{ borderRadius:"10px",background:"linear-gradient(45deg,white,rgb(7, 243, 7))"}}>
             <h2>Cart Summary</h2>
-            <p>Total|checkout | Payment</p>
+            <p>Total |checkout | Payment</p>
             <hr/>
-            <h4>Total : {totalPrice()}</h4>
+            <h5>Price : LKR {Price()}.00</h5>
+            <h5>Discount : LKR {discountPrice()}.00</h5>
+            <h5>Deliver fee : LKR {deliverFee()}.00</h5>
+            <h4>Total Amount : {totalPrice()}</h4>
+            <hr/>
             {auth?.user?.address ?(
               
               <div className="mb-3">
-                <h4>Current Address</h4>
+                <h4><u>Current Address</u></h4>
                 <h5>{auth?.user?.address}</h5>
                 <button className="btn btn-outline-warning text-primary"
                 onClick={()=>navigate('/dashboard/user/profile')}>Update Address</button>
@@ -155,7 +203,7 @@ const CartPage = () => {
               onInstance={instance=>setInstance(instance)}/>
               <button className="btn btn-primary" onClick={handlePayment}
               disabled={ loading || !instance ||!auth?.user?.address}>
-                {loading ? "Processing....":"Make Payment"}
+                {loading ? "Processing....":" Payment"}
                 </button>
               </>
               )}
