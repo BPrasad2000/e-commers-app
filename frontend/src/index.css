@@ -196,4 +196,11 @@ color: rgb(240, 229, 229);
 
 }
 
+/******contact us*****/
+.contact-form{
+  padding: 40px;
+  background-color: rgb(223, 223, 223);
+  border-color: black;
+  border-radius:  0 20px;
+}
 

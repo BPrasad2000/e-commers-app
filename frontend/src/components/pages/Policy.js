@@ -1,65 +1,114 @@
-import React from 'react'
-import Layout from '../Layout/Layout'
+import React from "react";
+import Layout from "../Layout/Layout";
+import py from "../img/py.png"
 
 function Policy() {
   return (
-    <Layout title={'Policy'}>
-      <h1>Privacy Policy</h1>
-      1. Introduction
-Welcome to [Supermarket Name]’s Privacy Policy. At [Supermarket Name], we are committed to protecting your privacy and ensuring the security of your personal information. This policy outlines how we collect, use, and safeguard your information when you visit our website.
+    <Layout title={"Policy"}>
+      <div className="hg">
+      <img src={py} className="img-fluid w-100 " alt="" style={{height:"50%"}}></img>
+      </div>
+      <h1 className="text-center">Privacy Policy</h1>
+      <div className="container">
+      <ol type="1">
+        <li className="fs-3">Introduction</li>
+        <p>
+          Welcome to Mawella Super’s Privacy Policy. At Mawella Super, we are
+          committed to protecting your privacy and ensuring the security of your
+          personal information. This policy outlines how we collect, use, and
+          safeguard your information when you visit our website.
+        </p>
 
-2. Information Collection
-We collect information from you when you:
+        <li className="fs-3"> Information Collection</li>
+        <p>We collect information from you when you:</p>
+        <ul type="disc">
+          <li>Create an account</li>
+          <li>Place an order</li>
+        </ul>
+        <p>The types of information we collect include:</p>
+        <ul type="disc">
+          <li>
+            Personal identification information (name, email address, phone
+            number)
+          </li>
+          <li>Payment information (credit card details)</li>
+          <li>Order history and preferences</li>
+        </ul>
 
-Create an account
-Place an order
-Sign up for our newsletter
-Participate in surveys or promotions
-The types of information we collect include:
+        <li className="fs-3">Use of Information</li>
+        <p>The information we collect is used to:</p>
+        <ul type="disc">
+          <li>Process and fulfill your orders </li>
+          <li>Personalize your shopping experience</li>
+          <li>Send you updates about your order</li>
+          <li>Provide you with promotional offers and information</li>
+          <li>Improve our website and services</li>
+        </ul>
 
-Personal identification information (name, email address, phone number)
-Payment information (credit card details)
-Order history and preferences
-3. Use of Information
-The information we collect is used to:
+        <li className="fs-3"> Sharing of Information</li>
+        <p>
+          We do not sell or rent your personal information to third parties. We
+          may share your information with:
+        </p>
+        <ul type="disc">
+          <li>
+            Third-party service providers (e.g., payment processors, delivery
+            services)
+          </li>
+          <li>Legal authorities, if required by law</li>
+        </ul>
 
-Process and fulfill your orders
-Personalize your shopping experience
-Send you updates about your order
-Provide you with promotional offers and information
-Improve our website and services
-4. Sharing of Information
-We do not sell or rent your personal information to third parties. We may share your information with:
+        <li className="fs-3">Data Security</li>
+        <p>
+          We implement a variety of security measures to maintain the safety of
+          your personal information. These include encryption, secure servers,
+          and compliance with relevant data protection laws.
+        </p>
 
-Third-party service providers (e.g., payment processors, delivery services)
-Legal authorities, if required by law
-5. Data Security
-We implement a variety of security measures to maintain the safety of your personal information. These include encryption, secure servers, and compliance with relevant data protection laws.
+        <li className="fs-3"> Cookies and Tracking Technologies</li>
+        <p>
+          We use cookies to enhance your browsing experience and gather data
+          about site traffic and interaction. You can choose to disable cookies
+          through your browser settings, but this may affect the functionality
+          of our site.
+        </p>
 
-6. Cookies and Tracking Technologies
-We use cookies to enhance your browsing experience and gather data about site traffic and interaction. You can choose to disable cookies through your browser settings, but this may affect the functionality of our site.
+        <li className="fs-3"> Customer Rights</li>
+        <p>You have the right to:</p>
+        <ul type="disc">
+          <li>Access your personal data</li>
+          <li>Request correction of inaccurate information</li>
+          <li>Request deletion of your data</li>
+          <li>Opt-out of receiving promotional communications</li>
+          </ul>
+          <p>
+            To exercise these rights, please contact us at
+            <a href="/contact">Contact us</a>.
+          </p>
+       
 
-7. Customer Rights
-You have the right to:
+        <li className="fs-3">Changes to the Privacy Policy</li>
+        <p>
+          We may update this privacy policy from time to time. We will notify
+          you of any significant changes by posting the new policy on our
+          website and updating the effective date.
+        </p>
 
-Access your personal data
-Request correction of inaccurate information
-Request deletion of your data
-Opt-out of receiving promotional communications
-To exercise these rights, please contact us at [Contact Information].
-
-8. Changes to the Privacy Policy
-We may update this privacy policy from time to time. We will notify you of any significant changes by posting the new policy on our website and updating the effective date.
-
-9. Contact Information
-If you have any questions or concerns about this privacy policy, please contact us at:
-
-Email: [Email Address]
-Phone: [Phone Number]
-Address: [Physical Address]
-By using our website, you consent to our privacy policy.
+        <li className="fs-3">Contact Information</li>
+        <p>
+          If you have any questions or concerns about this privacy policy,
+          please contact us at:
+        </p>
+        <ul type="disc">
+          <li>Email:mawellasuper@gmail.com </li>
+          <li>Phone: 0112623522 </li>
+          <li>Address:467 Colombo - Galle Rd, Rathmalana</li>
+        </ul>
+        <p>By using our website, you consent to our privacy policy.</p>
+      </ol>
+      </div>
     </Layout>
-  )
+  );
 }
 
-export default Policy
+export default Policy;
